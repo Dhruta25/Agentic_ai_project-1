@@ -30,14 +30,14 @@ def chat_endpoint(request: RequestState):
     system_prompt = request.model_prompt
     provider = request.model_provider
 
-    response = get_response_from_agent(
+    return get_response_from_agent(
         llm_id=llm_id,
         query=query,
         allow_search=allow_search,
         system_prompt=system_prompt,
         provider=provider
     )
-    return {"response": response}
+    
 
 
 if __name__ == "__main__":
