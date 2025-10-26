@@ -20,3 +20,4 @@ tavily-python
 
 # Typing (for older Python versions compatibility)
 typing-extensions
+numpy
